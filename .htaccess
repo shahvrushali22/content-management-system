@@ -1,0 +1,12 @@
+#no semicolon
+#system file for php if already exists,edit it else make new.
+#pretty urls
+
+
+#RewriteEngine On
+#RewriteRule ^post$ post.php
+
+#RewriteRule ^admin/posts/([a-zA-Z_]+)/([0-9]+/[0-9]+)$ admin/posts.php?source=$1&post_id=$2
+#url: cms/admin/edit_post/4
+
+#RewriteRule ^admin/posts$ admin/posts.php

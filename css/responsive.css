@@ -1,0 +1,97 @@
+/*LARGE DEVICES*/
+@media(min-width: 1200px){
+/*    This is working fine*/
+}
+
+/*Medium Devices (Landscape Tablets and Medium Desktops)*/
+@media(min-width: 992px) and (max-width: 1199px){
+/*    This is working fine*/
+}
+
+/*Small Devices(Portrait TAblets and Small Desktops)*/
+@media(min-width: 768px) and (max-width: 991px){
+    #wg-menu{
+        float: left;
+ }
+    .home-cover h2{
+        font-size: 40px;
+    }
+    .btn-general{
+        padding: 10px 24px;
+        font-size: 15px;
+    }
+    .about-bg-diagonal{
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+    
+    #about .content-box{
+        height: 350px;
+        
+    }
+    .testimonial blockquote{
+        padding: 10px 15px;
+    }
+    .testimonial blockquote:before{
+        left: 10px;
+    }
+    .testimonial blockquote:after{
+        right: 20px;
+    }
+    
+    .stats-item{
+        padding: 50px 0;
+    }
+    .footer-bottom{
+        text-align: center;
+    }
+}
+
+
+
+/*small Devices (Portrait Tablets and Small Desktops)*/
+
+@media(max-width:767px){
+    #wg-menu{
+        float: left;
+    }
+    .home-cover h2{
+        font-size: 30px;
+    }
+    
+    .btn-general{
+        padding: 8px 22px;
+        font-size: 14px;
+    }
+    .about-bg-diagonal{
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+    #about .content-box{
+        height: 350px;
+    }
+    
+    .testimonial blockquote{
+        padding: 10px 50px;
+    }
+    
+    .testimonial blockquote:before{
+        left: 10px;
+    }
+    .testimonial blockquote:after{
+        right: 20px;
+    }
+    .stats-item{
+        padding: 10px 0;
+    }
+    .footer-bottom{
+        text-align: center;
+    }
+    .btn-back-to-top{
+        padding: 5px 10px;
+    }
+}

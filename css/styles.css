@@ -1,0 +1,749 @@
+/*style.css*/
+/****************************************************************************************************************************************************
+                PROJECT NAME:         :            WHITE PAPER;
+
+                                DEFAULT VALUES
+
+                FONT                  :            Roboto Codensed;
+                Medium Turquoise      :            #34C6D3 (Buttons, Icons, Lines & Background)
+                Steel Gray            :            #41464B (Headings)
+                Blue Bayoux           :            #64707B (Paragraphs)
+                White                 :            #FFF (Text with Dark BG)
+                Black                 :            #000
+
+/*****************************************************************************************************
+                                GENERAL CSS
+*****************************************************************************************************/
+
+html,
+body{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto Condensed';
+    letter-spacing: .05em;
+    line-height: 1.1em;
+}
+
+h3{
+    text-transform: uppercase;
+    color: #41464B;
+}
+p{
+    font-size: 16px;
+    color: #64707B;
+    font-weight: 300;
+}
+/*****************************************************************************************************
+                                BUTTON SECTION GENERIC
+*****************************************************************************************************/
+
+.btn-general{
+    border: solid 2px #fff;
+    border-radius: 0;
+    padding: 12px 26px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.btn-white{
+    border-color: #fff;
+    color: #fff;
+
+}
+.send-btn{
+    border-color: #fff;
+    color: #fff;
+    background: none;
+}
+.btn-white:hover,
+.btn-white:focus{
+    background: #fff;
+    color: #41464B;
+}
+.btn-blue{
+    border-color: #34C6D3;
+    color: #34C6D3;
+    background-color:transparent;
+}
+.btn-blue:hover,
+.btn-blue:focus{
+    background: #34C6D3;
+    color: #fff;
+}
+
+
+/*****************************************************************************************************
+                              PARALLAX SECTION CSS GENERIC
+*****************************************************************************************************/
+
+.bg-parallax{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*****************************************************************************************************
+                              HOME SECTION CSS
+*****************************************************************************************************/
+#home{
+    height: 100%;
+}
+.home-cover{
+    background-image: url('../img/bg-home.jpg');
+    height: 100%;
+}
+.home-content-box{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.home-content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;/* we could have done using bootstrap class text-center */
+}
+
+.home-cover h2{
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+/*****************************************************************************************************
+                                HOME SECTION ANIMATION
+*****************************************************************************************************/
+.home-cover,
+.home-heading,
+.home-btn{
+    animation-duration: .5s;
+}
+.home-cover{
+    animation-delay: .1s;
+}
+.home-heading{
+    animation-delay: .5s;
+}
+.home-btn{
+    animation-delay: 1s;
+}
+
+
+
+.home-heading{
+    animation-delay: .5s;
+}
+.home-btn{
+    animation-delay: 1s;
+}
+
+/*****************************************************************************************************
+                                CONTENT BOX SECTION
+*****************************************************************************************************/
+
+.content-box{
+    padding: 60px 0;
+}
+.content-title h3{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.content-title-underline{
+    width: 30px;
+    height: 3px;
+    margin: 0 auto 30px;
+    background: #34C6D3;
+}
+
+/*****************************************************************************************************
+                               SERVICE SECTION CSS
+*****************************************************************************************************/
+
+.service-item{
+    margin: 0 0 20px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+.service-item-icon i{
+    float: left;
+    color: #34C6D3;
+    padding: 15px;
+    margin-right: 25px;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+.service-item:hover .service-item-icon i{
+    color: #fff;
+    background: #34C6D3;
+}
+
+.service-item-title h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.service-item-desc p{
+    margin: 0;
+    padding-left: 100px;
+}
+
+/*****************************************************************************************************
+                                ABOUT SECTION CSS
+*****************************************************************************************************/
+
+#about .content-box{
+    float: left;
+    height: 700px;
+}
+.content-box-outer{
+    display: table;
+    width: 100%;
+    height: 100%;
+
+}
+.content-box-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+.about-desc{
+    margin-bottom: 30px;
+}
+.about-btn{
+    text-align: center;
+}
+.about-bg-diagonal{
+    width: 60%;
+    float: right;
+    height: 700px;
+    background-image: url(../img/bg-about.jpg);
+    border-left: solid 200px #fff;
+    border-top: solid 700px transparent;
+}
+
+
+/****************************************************************************************************
+*****************************************************************************************************/
+
+.row.no-gutters [class*=col-]{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper{
+    overflow: hidden;
+}
+
+.img-wrapper img{
+    transition: transform .5s ease;
+}
+.img-wrapper img:hover{
+    transform: scale(1.5);
+    cursor: zoom-in;
+}
+
+/*****************************************************************************************************
+                            OUR TEAM SECTION
+*****************************************************************************************************/
+
+.team-member{
+    margin: 0 15px;
+}
+
+.team-member-info{
+    padding: 10px 0 30px 0;
+    text-align: center;
+}
+
+.h4.team-member-name{
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 2px;
+}
+
+h4.team-member-designation{
+    color: #34C6D3;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 1px;
+    padding-top: 5px;
+    font-weight: 700;
+}
+
+/******************************************************************************************************
+                            SOCIAL ICON DESIGN
+*****************************************************************************************************/
+
+.social-list{
+    padding-left: 0;
+}
+
+.social-list li{
+    list-style: none;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 6px;
+    margin-top:10px;
+}
+
+.social-icon i{
+    font-size: 16px;
+}
+
+.icon-white{
+    color: #fff;
+}
+
+.icon-gray{
+    color: #64707B;
+}
+
+.icon-white:hover,
+.icon-gray:hover{
+    color: #34C6D3;
+}
+
+
+/*****************************************************************************************************
+                            TESTIMONIAL SECTION
+*****************************************************************************************************/
+
+.content-title-white{
+    color: white;
+}
+.testimonial-cover{
+    background-image: url('../img/bg-testimonials.jpg');
+
+}
+
+.customers-testimonials{
+    padding: 50px 0;
+}
+
+.testimonial img{
+    max-width: 120px;
+    margin: 0 auto;
+}
+.testimonial blockquote{
+    border: 0;
+    font-family: georgia, times, serif;
+    font-style: italic;
+    padding: 10px 150px;
+    color: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial p{
+    color: #fff;
+}
+.testimonial blockquote p{
+    width: 70%;
+    margin: 10px auto;
+}
+
+.testimonial blockquote:before,
+.testimonial blockquote:after{
+    font-size: 80px;
+    font-style: normal;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+
+.testimonial blockquote:before{
+    content: "\201C";
+    top: 0;
+    left: 100px;
+}
+.testimonial blockquote:after{
+    content: "\201D";
+    Bottom: 0;
+    right: 100px;
+}
+.testimonial-author p strong{
+    display: block;
+}
+
+/*******************************************************************************************************
+                                    PRICING TABLE CSS
+*******************************************************************************************************/
+
+.pricing-box{
+    text-align: center;
+    border: solid 3px #34C6D3;
+    padding: 50px 0;
+    margin: 40px 0;
+}
+
+h4.pricing-title{
+    background-color: #34C6D3;
+    color: #fff;
+    display: inline-block;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+
+h3.pricing-value{
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h3.pricing-value sup{
+    font-size: 28px;
+    font-weight: 400;
+    vertical-align: super;
+}
+
+ul.pricing-spec{
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 60px;
+}
+
+ul.pricing-spec li p{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.pricing-box-lg{
+    padding: 90px 0;
+    margin:0;
+    background-color: #34C6d3;
+}
+
+.pricing-box-lg h4.pricing-title{
+    color: #34c6d3;
+    background-color: #fff;
+}
+
+.pricing-box-lg ul.pricing-spec li p{
+    color: #fff;
+}
+
+/*******************************************************************************************************
+                                    STATS CSS
+*******************************************************************************************************/
+
+.stats-cover{
+    background-image: url("../img/bg-stats.jpg");
+}
+
+.stats-cover .content-box{
+    background: rgba(0,0,0,0.8);
+}
+
+.stats-item{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.stats-item i{
+    color: #34c5d3;
+}
+
+.stats-item h2{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-bottom: 1px;
+}
+
+.stats-item p{
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+
+.client{
+    padding: 40px 0;
+}
+
+/*******************************************************************************************************
+                                    FOOTER CSS
+*******************************************************************************************************/
+
+
+
+
+footer{
+    background-color: #41464B;
+    padding-top: 30px;
+    border-top: 5px solid rgba(0,0,0,0.1);
+}
+.contact-left h3,
+.contact-right h3{
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+}
+/*form .form-control {*/
+    /*background: transparent;*/
+    /*border-radius: 0;*/
+    /*border-color: #fff;*/
+    /*font-size: 16px;*/
+    /*color: #fff;*/
+    /*margin-bottom: 20px;*/
+    /*padding: 10px 15px;*/
+    /*font-weight: 300;*/
+/*}*/
+
+.contact-left p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.contact-info{
+    background: url('../img/world-map.png') no-repeat;
+    background-size: contain;
+}
+address strong,
+address p{
+    color: #fff;
+    font-size: 16px;
+}
+footer{
+    letter-spacing: 1px;
+}
+
+
+
+.footer-bottom{
+    background: rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+    margin-top: 60px;
+}
+.footer-copyrights p{
+    color: #fff;
+}
+.footer-menu{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+}
+.footer-menu ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.footer-menu ul li{
+    display: inline-block;
+}
+.footer-menu a{
+    color: #fff;
+    padding-right: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.footer-menu a:hover{
+    color: #34C6D3;
+}
+.phone-fax-email p{
+    color: #fff;
+}
+
+.btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    padding: 5px 15px;
+    display: none;
+}
+
+/*****************************************************************************************************
+                            HEADER NAVIGATION SECTION
+*****************************************************************************************************/
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    transition: all .5s ease-in-out;
+    border: none;
+
+
+}
+.navbar >li> a{
+    color: #fff;
+}
+.wg-top-nav {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.navbar-nav > .nav-white{
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #34c6d3;
+}
+.wg-nav-wrapper {
+    padding: 0 10px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 26px;
+
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+#wg-menu {
+    float: right;
+}
+
+.navbar-nav>li> a {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.navbar-nav > li > a:focus,
+.navbar-nav > li > a:hover {
+    background: none;
+    color: #34C6D3;
+}
+
+.navbar-toggle{
+    background-color: rgba(0,0,0,0.5);
+    border:solid 1px #fff;
+    border-radius: 0;
+}
+.navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+.navbar-collapse{
+    max-height: none!important;
+}
+.navbar ul.navbar-nav>li.active>a{
+    color: #34C6D3;
+}
+
+.margin-nav{
+    margin-left: 380px;
+    padding: 5px;
+}
+
+
+.post-preview > a:focus, .post-preview > a:hover {
+    text-decoration: none;
+    color:#fff;
+}
+
+.post-preview > a > .post-title {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #41464B;;
+}
+.post-preview > a > .post-title:hover{
+    color:  #34c5d3;
+}
+.post-preview > a > .post-subtitle {
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.post-preview > .post-meta {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 0;
+    color: #868e96;
+}
+
+.post-preview > .post-meta > a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
+    text-decoration: underline;
+    color: #0085A1;
+}
+.post-title-bold{
+    font-weight: bold;
+    font-size: 40px;
+    color: #41464B;
+}
+.lead{
+    color: #41464B;
+    font-size: 30px;
+}
+.post-date{
+    font-size: 30px;
+    color: #34c6d3;
+}
+.post-content > p{
+    font-size: 80px;
+}
+form .form-controls{
+    background: transparent;
+    border-radius: 0;
+    border-color: #fff;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 768px) {
+    .post-preview > a > .post-title {
+        font-size: 36px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
